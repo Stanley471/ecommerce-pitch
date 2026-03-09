@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/data/products.php';
 
-$page_title  = 'Asap Swap — Curated Smartphones';
+$page_title  = 'Sabstores International — Curated Smartphones';
 $active_page = 'home';
 
 $all_products = get_all_products();
@@ -10,7 +10,7 @@ $featured     = [$all_products[0], $all_products[1], $all_products[2]]; // handp
 $categories   = get_unique_categories();
 $cat_counts   = array_count_values(array_column($all_products, 'category'));
 
-require_once __DIR__ . '../components/header.php';
+require_once __DIR__ . '/components/header.php';
 ?>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -27,7 +27,7 @@ require_once __DIR__ . '../components/header.php';
       </p>
 
       <h1 class="display-xl hero-title">
-        No<br><em>Price</em><br>Me.
+        Sabstores<br><em>International</em>
       </h1>
 
       <p class="hero-desc">
