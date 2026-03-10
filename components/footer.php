@@ -69,10 +69,35 @@
   </a>
 
   <script>
-    document.getElementById('waClose').addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      document.getElementById('whatsappBar').style.display = 'none';
+    // WhatsApp Bar Close Logic
+    const waClose = document.getElementById('waClose');
+    if (waClose) {
+      waClose.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.getElementById('whatsappBar').style.display = 'none';
+      });
+    }
+
+    // Scroll Reveal Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+            // Once revealed, no need to observe anymore
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const revealElements = document.querySelectorAll('.reveal');
+      revealElements.forEach(el => observer.observe(el));
     });
   </script>
 

@@ -17,38 +17,38 @@ require_once __DIR__ . '/components/header.php';
      HERO
 ══════════════════════════════════════════════════════════ -->
 <section class="hero" aria-label="Featured product">
-  <div class="hero-bg-number" aria-hidden="true">01</div>
+  <div class="hero-bg-number hero-reveal" aria-hidden="true" style="animation-delay: 1s;">01</div>
 
   <div class="container hero-grid">
 
     <div class="hero-content">
-      <p class="eyebrow eyebrow--accent hero-eyebrow">
+      <p class="eyebrow eyebrow--accent hero-eyebrow hero-reveal">
         &#9679; New arrival — <?= date('Y') ?>
       </p>
 
-      <h1 class="display-xl hero-title">
+      <h1 class="display-xl hero-title hero-reveal">
         Sabstores<br><em>International</em>
       </h1>
 
-      <p class="hero-desc">
+      <p class="hero-desc hero-reveal">
         <?= htmlspecialchars($hero_product['tagline']) ?>
         Titanium. Ceramic. A camera that sees what your eyes miss.
         The <?= htmlspecialchars($hero_product['name']) ?> sets a new standard.
       </p>
 
-      <div class="hero-actions">
+      <div class="hero-actions hero-reveal">
         <a href="product.php?slug=<?= urlencode($hero_product['slug']) ?>"
-           class="btn btn-accent">
+          class="btn btn-accent">
           Explore Now
           <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"
-               viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
         <a href="catalog.php" class="btn btn-outline">View All Phones</a>
       </div>
 
-      <div class="hero-meta">
+      <div class="hero-meta hero-reveal">
         <div class="hero-meta-item">
           <span class="display-md"><?= count($all_products) ?>000+</span>
           <small>Devices</small>
@@ -64,11 +64,11 @@ require_once __DIR__ . '/components/header.php';
       </div>
     </div>
 
-    <div class="hero-img-wrap" aria-hidden="true">
+    <div class="hero-img-wrap hero-reveal" aria-hidden="true">
       <div class="hero-img-glow"></div>
       <img src="<?= htmlspecialchars($hero_product['image_hero']) ?>"
-           alt="<?= htmlspecialchars($hero_product['name']) ?>"
-           width="500" height="500">
+        alt="<?= htmlspecialchars($hero_product['name']) ?>"
+        width="500" height="500">
     </div>
 
   </div>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/components/header.php';
 <!-- ══════════════════════════════════════════════════════════
      FEATURED
 ══════════════════════════════════════════════════════════ -->
-<section class="section" aria-labelledby="featured-heading">
+<section class="section reveal" aria-labelledby="featured-heading">
   <div class="container">
 
     <div class="section-hd">
@@ -121,7 +121,7 @@ require_once __DIR__ . '/components/header.php';
 <!-- ══════════════════════════════════════════════════════════
      PERKS
 ══════════════════════════════════════════════════════════ -->
-<div class="perks-bar">
+<div class="perks-bar reveal">
   <div class="container">
     <ul class="perks-list" role="list">
       <li class="perk">
@@ -159,7 +159,7 @@ require_once __DIR__ . '/components/header.php';
 <!-- ══════════════════════════════════════════════════════════
      CATEGORIES
 ══════════════════════════════════════════════════════════ -->
-<section class="section" aria-labelledby="cat-heading">
+<section class="section reveal" aria-labelledby="cat-heading">
   <div class="container">
 
     <div class="section-hd">
