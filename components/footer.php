@@ -7,8 +7,8 @@
 
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo"><em>Sabstores </em><em>International</em></div>
-        <p>Ikeja, Lagos</p>
+        <div class="footer-logo"><em>AsapSwap </em><em></em></div>
+        <p>2nd floor at shop c85, New Banex Plaza, Wuse II, Abuja</p>
       </div>
 
       <div class="footer-col">
@@ -44,14 +44,14 @@
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; <?= date('Y') ?> Sabstores International. All rights reserved.</span>
+      <span>&copy; <?= date('Y') ?> AsapSwap. All rights reserved.</span>
       <span>Stanley&mdash; no frameworks were harmed.</span>
     </div>
 
   </div>
 
   <!-- WhatsApp Floating Bar -->
-  <a href="https://wa.me/2349025389524?text=Hello%20Sabstores,%20I'm%20interested%20in%20your%20products."
+  <a href="https://wa.me/2347066071543?text=Hello%20AsapSwap,%20I'm%20interested%20in%20your%20products."
     class="whatsapp-bar"
     id="whatsappBar"
     target="_blank"

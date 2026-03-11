@@ -28,7 +28,7 @@ $active_page = $active_page ?? '';
     <div class="container header-inner">
 
       <a href="/index.php" class="logo" aria-label="CellVault — home">
-        Sabstores<em></em>
+        AsapSwap<em></em>
       </a>
 
       <nav class="header-nav" role="navigation" aria-label="Primary">

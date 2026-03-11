@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/data/products.php';
 
-$page_title  = 'Sabstores International — Curated Smartphones';
+$page_title  = 'AsapSwap — Curated Smartphones';
 $active_page = 'home';
 
 $all_products = get_all_products();
@@ -27,7 +27,7 @@ require_once __DIR__ . '/components/header.php';
       </p>
 
       <h1 class="display-xl hero-title hero-reveal">
-        Sabstores<br><em>International</em>
+        AsapSwap<br><em>No price me</em>
       </h1>
 
       <p class="hero-desc hero-reveal">
