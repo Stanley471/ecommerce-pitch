@@ -7,8 +7,8 @@
 
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo"><em>AsapSwap </em><em></em></div>
-        <p>2nd floor at shop c85, New Banex Plaza, Wuse II, Abuja</p>
+        <div class="footer-logo"><em>Ifeco Gadgets </em><em></em></div>
+        <p>Ikeja, Lagos</p>
       </div>
 
       <div class="footer-col">
@@ -44,14 +44,14 @@
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; <?= date('Y') ?> AsapSwap. All rights reserved.</span>
+      <span>&copy; <?= date('Y') ?> Ifeco Gadgets. All rights reserved.</span>
       <span>Stanley&mdash; no frameworks were harmed.</span>
     </div>
 
   </div>
 
   <!-- WhatsApp Floating Bar -->
-  <a href="https://wa.me/2347066071543?text=Hello%20AsapSwap,%20I'm%20interested%20in%20your%20products."
+  <a href="https://wa.me/2347037897824?text=Hello%20Ifeco%20Gadgets,%20I'm%20interested%20in%20your%20products."
     class="whatsapp-bar"
     id="whatsappBar"
     target="_blank"
@@ -69,35 +69,10 @@
   </a>
 
   <script>
-    // WhatsApp Bar Close Logic
-    const waClose = document.getElementById('waClose');
-    if (waClose) {
-      waClose.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        document.getElementById('whatsappBar').style.display = 'none';
-      });
-    }
-
-    // Scroll Reveal Logic
-    document.addEventListener('DOMContentLoaded', () => {
-      const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal-active');
-            // Once revealed, no need to observe anymore
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      const revealElements = document.querySelectorAll('.reveal');
-      revealElements.forEach(el => observer.observe(el));
+    document.getElementById('waClose').addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      document.getElementById('whatsappBar').style.display = 'none';
     });
   </script>
 
